@@ -19,7 +19,7 @@ const app = express();
 
 /* Settings */
 /* app.set('AppName','Carlos FreeLancer') */
-app.set('port','3000')
+app.set('port',process.env.PORT || 3000)
 app.set('view engine','ejs');
 
 /* Middlewares */
